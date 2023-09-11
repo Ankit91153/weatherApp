@@ -1,8 +1,9 @@
 const express=require("express");
 const app=express();
 const hbs=require("hbs");
+require("dotenv").config();
 const path=require("path")
-const port=process.env.port || 5000;
+const port=process.env.PORT;
 // const dotenv=require("../config.env")
 
 const staticpath=path.join(__dirname,"../public");
