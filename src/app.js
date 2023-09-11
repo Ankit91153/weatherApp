@@ -2,6 +2,7 @@ const express=require("express");
 const app=express();
 const hbs=require("hbs");
 const path=require("path")
+const port=process.env.port || 5000;
 // const dotenv=require("../config.env")
 
 const staticpath=path.join(__dirname,"../public");
@@ -25,7 +26,7 @@ app.get("/weather",(req,res)=>{
 })
 
 
-app.listen(5000,()=>{
+app.listen(port,()=>{
 
-console.log("Server Listen"+5000);
+console.log("Server Listen"+port);
 })
