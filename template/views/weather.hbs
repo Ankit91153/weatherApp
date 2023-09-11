@@ -1,0 +1,34 @@
+{{>navbar}}
+
+<div class="container">
+    <div class="main_content">
+        <form class="temp_form">
+            <input type="text" id="cityName" placeholder="Enter City Name......." autocomplete="off" class="searchcity">
+            <input type="submit" value="search" id="submitBtn" class="search">
+        </form>
+
+        <div class="tempInformation">
+            <div class="top_layer">
+                <p id="day">
+                    tuesday
+                </p>
+                <p class="today_date">
+                    12oct
+                </p>
+            </div>
+            <div class="main_layer">
+                <p id="city_name">
+                    Get Output Here
+                </p>
+                <div class="middle_layer data_hide">
+                    <p id="temp"><span id="temperature">0</span><sup>0</sup>C</p>
+                    <p id="temp_status"><i class="fa fa-clouds" aria-hidden="true"></i></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+{{>footer}}
